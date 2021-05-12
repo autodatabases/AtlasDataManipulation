@@ -9,8 +9,11 @@ header = {"Content-Type": "application/json",
 
 
 def send_typedef(path_to_typedef_json):
+    """Creates typedef using the json file passed in parameters"""
     with open(path_to_typedef_json, "r") as json_file:
         payload = json.load(json_file)
 
     response_decoded_json = requests.post(url=url, json=payload, headers=header, auth=('admin', 'admin'))
     return response_decoded_json.status_code
+
+# send_typedef("jsons/typedef_datasets.json")  # creates dataset typedef
