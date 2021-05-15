@@ -14,12 +14,12 @@ def create_process(input_guid, output_guid):
     data = {"entities": [
         {
             "typeName": "spark_process",
-            "createdBy": "Pavel Yarmaliuk",
+            "createdBy": "John Doe",
             "attributes": {
                 "qualifiedName": "spark_process",
                 "name": "Cleansing",
                 "description": "Clean data from raw to clean",
-                "owner": "Pavel Yarmaliuk",
+                "owner": "John Doe",
                 "inputs": [{"guid": "1a3a8057-96fa-40bf-a386-c70db115ea1b",
                             "typeName": "data_object"}],
                 "outputs": [{'guid': '1788268e-e104-4d12-a4b1-1aeff7c738b0', "typeName": "data_object"}]

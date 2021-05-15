@@ -27,7 +27,7 @@ def create_dataset(qualified_name, name, path, classifications, col_schema=[
         "entities": [
             {
                 "typeName": "data_object",
-                "createdBy": "Pavel Yarmaliuk",
+                "createdBy": "John Doe",
                 "attributes": {
                     "description": "Dataset object",
                     "qualifiedName": "manual_driveTime",
