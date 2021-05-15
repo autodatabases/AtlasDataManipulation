@@ -9,7 +9,11 @@ header = {"Content-Type": "application/json",
 
 
 def send_typedef(path_to_typedef_json):
-    """Creates typedef using the json file passed in parameters"""
+    """Creates typedef using the json file passed in parameters
+    :param path_to_typedef_json
+        Path to json with definition of type
+    :return status code of request if 200 than request are good
+    """
     with open(path_to_typedef_json, "r") as json_file:
         payload = json.load(json_file)
 
