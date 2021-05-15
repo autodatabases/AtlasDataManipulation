@@ -30,13 +30,14 @@ def create_process(input_guid, output_guid, path, name):
         }
     ]
     }
-    data["entities"][0]["attributes"]["inputs"][0]["guid"] = input_guid
-    data["entities"][0]["attributes"]["outputs"][0]["guid"] = output_guid
+    data["entities"][0]["attributes"]["inputs"] = input_guid
+    data["entities"][0]["attributes"]["outputs"] = output_guid
     data["entities"][0]["attributes"]["path"] = path
     data["entities"][0]["attributes"]["name"] = name
+    data["entities"][0]["attributes"]["qualifiedName"] = name
     header = {"Content-type": "application/json",
               "Accept": "application/json",
               "Cache-Control": "no-cache"}
-
+    #print(data)
     response_decoded_json = requests.post(url, json=data, headers=header, auth=('admin', 'admin'))
     return response_decoded_json.status_code
