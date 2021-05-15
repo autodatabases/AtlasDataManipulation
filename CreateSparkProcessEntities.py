@@ -5,6 +5,12 @@ url = "http://localhost:21000/api/atlas/v2/entity/bulk"
 
 
 def create_process(input_guid, output_guid):
+    """
+    In this function we creating relation between 2 entities changing basic dictionary and sending this dictionary to Atlas API
+    :param input_guid: guid of input dataset or other entity
+    :param output_guid:guid of input dataset or other entity
+    :return: status code of request. If request completed successfully than it returns 200
+    """
     data = {"entities": [
         {
             "typeName": "spark_process",
