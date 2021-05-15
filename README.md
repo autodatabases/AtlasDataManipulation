@@ -3,6 +3,13 @@
 cd your/path/to/amundsen
 docker-compose -f docker-amundsen-atlas.yml up
 ```
+# Run sample loader
+```bash
+    cd your/path/to/this/project
+    python load_sample.py
+```
+
+
 # Web UI
 After amundsen install for web UI open localhost:21000 with  login = admin and password = admin
 
