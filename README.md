@@ -29,5 +29,5 @@ In the top of screenshot you can see url in the last part of url you can take gu
 
 # Purposes
 1. Automate creating spark process entities
-2. Create json file for storing guid of each added dataset
+2. Create json file for storing guid of each added dataset (Completed)
 3. Make requests asyncronus
