@@ -1,7 +1,7 @@
 {"entities": [
     {
         "typeName": "spark_process",
-        "createdBy": "Pavel Yarmaliuk",
+        "createdBy": "John Doe",
         "attributes": {
             "qualifiedName": "spark_process",
             "name": "spark process 1",

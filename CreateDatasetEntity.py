@@ -34,7 +34,7 @@ def create_dataset(qualified_name, name, path, classifications, col_schema=[
                     "name": "manual.driveTime",
                     "path": "https://bitbucket.org/emea_cf/datalake-cleansing/src/master/datalake-cleansing-jobs/src/main/scala/com/goodyear/datalake/cleansing/current/jobs/external/aligneddistribution/carage/CarAgeTask.scala",
                     "frequency": "1",
-                    "owner": "PavelYarmaliuk",
+                    "owner": "John Doe",
                     "group": "GoodYear",
                     "format": "nc",
                     "col_schema": [
